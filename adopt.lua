@@ -31,7 +31,7 @@ local function useLure()
         bait.Parent = player.Character  -- Перемещаем предмет в персонажа
         wait(0.5)  -- Ждем, чтобы предмет был в инвентаре
         -- Нажимаем 'E' для использования приманки
-        local userInputService = game:GetService("User InputService")
+        local userInputService = game:GetService("UserInputService")
         userInputService.InputBegan:Wait()  -- Ждем нажатия клавиши
         userInputService.InputBegan:Fire(userInputService.InputBegan)  -- Эмулируем нажатие 'E'
     else
